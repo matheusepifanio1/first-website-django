@@ -9,7 +9,11 @@
         </div>
         <div>
             <h2>Escolha um post</h2>
-            <ul><li><a href="">Post 1</a></li><li><a href="">Post 2</a></li><li><a href="">Post 3</a></li></ul>
+            <ul>
+                {% for post in posts %}
+                    <li><a href="">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
         </div>
     </body>
 </html>
